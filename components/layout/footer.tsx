@@ -88,20 +88,25 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-sm text-primary-foreground/70">
-                  123 Canine Street, Sandton<br />
-                  Johannesburg, 2196
+                  1 Bellevista Rd, Cnr Rifle range<br />
+                  Haddon, Tuffontein, 2190<br />
+                  South Africa
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
                 <a href="tel:+27123456789" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                  +27 12 345 6789
+                  Cell: (+27) 82 922 3725
+                  <br />
+                  Tel: (+27) 11 433 1442
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
                 <a href="mailto:hello@thedogclub.co.za" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                  hello@thedogclub.co.za
+                  juliebdogs@gmail.com
+                  <br />
+                  jannequethedogclub@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">

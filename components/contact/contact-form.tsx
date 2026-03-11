@@ -27,6 +27,7 @@ const services = [
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -40,12 +41,29 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setErrorMessage(null)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result?.error || 'Failed to send message')
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      setErrorMessage(
+        error instanceof Error ? error.message : 'Failed to send message'
+      )
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (field: string, value: string) => {
@@ -69,6 +87,7 @@ export function ContactForm() {
           variant="outline"
           onClick={() => {
             setIsSubmitted(false)
+            setErrorMessage(null)
             setFormData({
               name: '',
               email: '',
@@ -190,6 +209,12 @@ export function ContactForm() {
           'Send Message'
         )}
       </Button>
+
+      {errorMessage && (
+        <div className="rounded-lg border border-destructive/20 bg-destructive/5 px-4 py-3 text-sm text-destructive">
+          {errorMessage}
+        </div>
+      )}
 
       <p className="text-sm text-muted-foreground text-center">
         We respect your privacy. Your information will never be shared.

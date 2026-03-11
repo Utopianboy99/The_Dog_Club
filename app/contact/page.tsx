@@ -66,8 +66,8 @@ export default function ContactPage() {
                   <p className="mt-2 text-primary-foreground/80">
                     Get a quick response by messaging us directly on WhatsApp.
                   </p>
-                  <Button 
-                    className="mt-4 bg-primary-foreground text-primary hover:bg-primary-foreground/90" 
+                  <Button
+                    className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90"
                     asChild
                   >
                     <a 

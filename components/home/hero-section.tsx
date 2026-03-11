@@ -47,7 +47,7 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild className="text-base">
+            <Button size="lg" asChild className="text-base bg-primary text-primary-foreground hover:bg-primary/90">
               <a href="tel:+27123456789">
                 <Phone className="mr-2 h-5 w-5" />
                 Contact Us

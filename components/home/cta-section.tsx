@@ -39,11 +39,10 @@ export function CTASection() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                asChild 
-                className="text-base border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+              <Button
+                size="lg"
+                asChild
+                className="text-base bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 <a 
                   href="https://wa.me/27123456789?text=Hi!%20I'm%20interested%20in%20your%20services" 
@@ -59,7 +58,7 @@ export function CTASection() {
             <p className="mt-8 text-sm text-primary-foreground/60">
               Or call us at{' '}
               <a href="tel:+27123456789" className="underline hover:text-primary-foreground">
-                +27 12 345 6789
+                 +27 82 922 3725
               </a>
             </p>
           </div>
