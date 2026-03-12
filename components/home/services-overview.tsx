@@ -37,7 +37,7 @@ const services = [
   {
     title: 'Behaviour Consultations',
     description: 'One-on-one sessions to address specific behavioural challenges.',
-    image: '/images/HappyPawsStrolling.png',
+    image: '/images/happy-paws-strolling.png',
     href: '/services#behaviour',
   },
 ]
