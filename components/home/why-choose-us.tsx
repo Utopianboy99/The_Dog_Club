@@ -29,7 +29,7 @@ const features = [
   {
     icon: MapPin,
     title: 'Prime Location',
-    description: 'Easily accessible location in Sandton with ample parking.',
+    description: 'Easily accessible location in Bellevista.',
   },
 ]
 

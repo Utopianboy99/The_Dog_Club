@@ -19,7 +19,7 @@ const navigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-primary-foreground">
+    <footer className="bg-background text-foreground">
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -42,7 +42,7 @@ export function Footer() {
               </div>
               <span className="text-xl font-serif font-bold">The Dog Club</span>
             </Link>
-            <p className="mt-4 text-sm text-primary-foreground/70 leading-relaxed">
+            <p className="mt-4 text-sm text-foreground/70 leading-relaxed">
               Professional dog training, grooming, daycare, and boarding services in Johannesburg, South Africa.
             </p>
           </div>
@@ -55,7 +55,7 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                    className="text-sm text-foreground/70 hover:text-foreground transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -72,7 +72,7 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                    className="text-sm text-foreground/70 hover:text-foreground transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -86,32 +86,32 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider">Contact</h3>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm text-primary-foreground/70">
+                <MapPin className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                <span className="text-sm text-foreground/70">
                   1 Bellevista Rd, Cnr Rifle range<br />
                   Haddon, Tuffontein, 2190<br />
                   South Africa
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary shrink-0" />
-                <a href="tel:+27123456789" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <Phone className="h-5 w-5 text-foreground shrink-0" />
+                <a href="tel:+27123456789" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
                   Cell: (+27) 82 922 3725
                   <br />
                   Tel: (+27) 11 433 1442
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:hello@thedogclub.co.za" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <Mail className="h-5 w-5 text-foreground shrink-0" />
+                <a href="mailto:hello@thedogclub.co.za" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
                   juliebdogs@gmail.com
                   <br />
                   jannequethedogclub@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm text-primary-foreground/70">
+                <Clock className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                <span className="text-sm text-foreground/70">
                   Mon - Fri: 7:00 AM - 6:00 PM<br />
                   Sat: 8:00 AM - 4:00 PM<br />
                   Sun: Closed
@@ -122,16 +122,16 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
+        <div className="mt-12 pt-8 border-t border-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-primary-foreground/60">
+            <p className="text-sm text-foreground/60">
               © {new Date().getFullYear()} The Dog Club. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
-              <a href="#" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+              <a href="#" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
                 Terms of Service
               </a>
             </div>
